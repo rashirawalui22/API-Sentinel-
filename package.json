@@ -1,0 +1,12 @@
+{
+  "name": "api-sentinel",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,violet \"npm --prefix frontend run dev\" \"npm --prefix server run dev\"",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
